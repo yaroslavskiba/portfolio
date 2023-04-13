@@ -6,8 +6,9 @@ body {
   width: 100vw;
   height: 100vh;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
+  letter-spacing: 1.5;
 }
 html input,
 html textarea,
