@@ -15,7 +15,7 @@ const Main = () => {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: null,
-    config: { duration: 1000 },
+    config: { duration: 500 },
   });
 
   return (

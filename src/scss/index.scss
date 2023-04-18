@@ -83,17 +83,27 @@ body {
     background: inherit;
     margin: 0 45px 0 45px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 45px;
-    padding: 15px;
+    border-radius: 25px;
+    padding: 3% 5%;
+    @include main-mixin;
   }
 
   .footer {
-    min-height: 94px;
+    min-height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 .button-main {
+}
+
+.link-color {
+  color: $main-color;
 }
