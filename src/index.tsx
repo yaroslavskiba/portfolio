@@ -7,6 +7,7 @@ import './index.css';
 import Header from './components/header';
 import Main from './components/content/main';
 import Footer from './components/footer';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -23,8 +24,10 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>,
 );
