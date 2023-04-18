@@ -85,13 +85,6 @@ body ul li {
   align-items: center;
   justify-content: space-evenly;
 }
-#root .header .navigation .navigation-list .current-link {
-  box-sizing: content-box;
-  padding: 7px 15px;
-  border: 2px solid #febd2f;
-  cursor: pointer;
-  border-radius: 15px;
-}
 #root .header .navigation .navigation-list .navigation-item a {
   color: #e3e3e3;
   position: relative;
@@ -113,6 +106,9 @@ body ul li {
 #root .header .navigation .navigation-list .navigation-item a:hover {
   color: #febd2f;
   transition: 0.5s ease;
+}
+#root .header .navigation .navigation-list .current-link a {
+  color: #febd2f;
 }
 #root .main {
   flex: 1 1 auto;
