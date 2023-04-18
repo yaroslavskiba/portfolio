@@ -11,13 +11,9 @@ import Footer from './components/footer';
 const App = () => {
   return (
     <>
-      <div className="wrapper">
-        <Header />
-
-        <Main />
-
-        <Footer />
-      </div>
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 };

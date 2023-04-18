@@ -1,5 +1,8 @@
 @import './colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import './components/header.scss';
+@import './components/main.scss';
+@import './components/footer.scss';
 
 html,
 body {
@@ -65,30 +68,31 @@ body {
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  display: flex;
+  background: $background;
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #000;
-    width: 100%;
-    margin: 0 45px;
-    height: 100%;
-    overflow-y: auto;
-
-    .header {
-      border: 1px solid #000;
-      height: 94px;
-    }
-    .main {
-      border: 1px solid #000;
-      flex: 1 1 auto;
-    }
-    .footer {
-      border: 1px solid #000;
-      min-height: 94px;
-    }
+  .header {
+    @include header-mixin;
   }
+
+  .main {
+    flex: 1 1 auto;
+    background: inherit;
+    margin: 0 45px 0 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 45px;
+  }
+
+  .footer {
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.button-main {
 }
