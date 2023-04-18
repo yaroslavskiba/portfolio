@@ -1,35 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const [current, setCurrent] = useState<string>('About Me');
+
+  const list = [
+    { name: 'About Me', link: '/' },
+    { name: 'Projects', link: '/projects' },
+    { name: 'Skills', link: '/skills' },
+    { name: 'Education', link: '/education' },
+    { name: 'Contact', link: '/contact' },
+    { name: 'Blog', link: '/blog' },
+  ];
+
+  const handleClick = (name: string) => setCurrent(name);
+
   return (
     <header className="header">
-      <a href="#" className="main-link-navigation"></a>
       <nav className="navigation">
         <ul className="navigation-list">
-          <li className="navigation-item">
-            <Link to="/">About Me</Link>
-          </li>
+          {list.map((item) => {
+            const name = item.name;
 
-          <li className="navigation-item">
-            <Link to="/projects">Projects</Link>
-          </li>
-
-          <li className="navigation-item">
-            <Link to="/skills">Skills</Link>
-          </li>
-
-          <li className="navigation-item">
-            <Link to="/education">Education</Link>
-          </li>
-
-          <li className="navigation-item">
-            <Link to="/contact">Contact</Link>
-          </li>
-
-          <li className="navigation-item">
-            <Link to="/blog">Blog</Link>
-          </li>
+            return (
+              <li key={name} className={`navigation-item${current === name ? ' current-link' : ''}`}>
+                <Link to={item.link} onClick={() => handleClick(name)}>
+                  {name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

@@ -8,6 +8,13 @@
       align-items: center;
       justify-content: space-evenly;
 
+      .current-link {
+        padding: 7px 15px;
+        border: 2px solid $main-color;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+
       .navigation-item {
         & a {
           color: $text-main;
