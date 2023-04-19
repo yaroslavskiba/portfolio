@@ -39,14 +39,11 @@ const Header = () => {
               const name = item.name;
 
               return (
-                <Link
-                  className={`${current === name ? 'current-link' : ''}`}
-                  to={item.link}
-                  key={name}
-                  onClick={() => handleClick(name)}
-                >
-                  {name}
-                </Link>
+                <li key={name} className={`navigation-item${current === name ? ' current-link' : ''}`}>
+                  <Link to={item.link} onClick={() => handleClick(name)}>
+                    {name}
+                  </Link>
+                </li>
               );
             })}
           </Menu>

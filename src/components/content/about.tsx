@@ -63,8 +63,8 @@ const About = () => {
 
         <p className="about-info-text">
           I am always looking to expand my knowledge and keep up with the latest web technologies. When I&apos;m not
-          coding, you can find me reading, exercising, or enjoying the outdoors. I would love the opportunity to bring
-          my skills and enthusiasm to your team.
+          coding, you can find me reading or exercising etc. I would love the opportunity to bring my skills and
+          enthusiasm to your team.
         </p>
       </div>
     </div>

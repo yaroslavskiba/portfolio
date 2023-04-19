@@ -107,15 +107,36 @@ body {
       padding: 15% 20%;
       font-size: 22px;
 
-      a {
-        color: $text-main;
-        text-decoration: none;
-        transition: color 0.3s ease;
+      .navigation-item {
         margin-bottom: 15px;
+        a {
+          color: $text-main;
+          position: relative;
 
-        &:hover {
-          color: $main-color;
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $main-color;
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover::before {
+            width: 100%;
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover {
+            color: $main-color;
+            transition: 0.5s ease;
+          }
         }
+      }
+      .current-link a {
+        color: $main-color;
       }
     }
 
@@ -158,4 +179,9 @@ body {
 
 .color-main {
   color: $main-color;
+}
+
+.caption-text {
+  font-size: 18px;
+  opacity: 0.8;
 }

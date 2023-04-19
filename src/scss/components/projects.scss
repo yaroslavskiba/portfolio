@@ -1,2 +1,31 @@
 @mixin projects-mixin {
+  .projects-container {
+    .projects-text {
+      margin-bottom: 5%;
+      a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 2px 1px 2px;
+        border-bottom: 1px solid $main-color;
+      }
+    }
+
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5%;
+      justify-content: space-evenly;
+
+      .projects-item-image {
+        width: 330px;
+        height: 330px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          box-shadow: 0 0 10px $main-color;
+          transition: 0.5s ease;
+        }
+      }
+    }
+  }
 }

@@ -43,4 +43,17 @@
       }
     }
   }
+
+  @media (max-width: 1120px) {
+    .about-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-container {
+      width: 95%;
+    }
+  }
 }
