@@ -74,7 +74,7 @@ body ul li {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: #303030;
+  background: linear-gradient(to bottom right, #303030 50%, #febd2f 50%);
 }
 #root .header .navigation {
   height: 94px;
@@ -83,7 +83,8 @@ body ul li {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5%;
 }
 #root .header .navigation .navigation-list .navigation-item a {
   color: #e3e3e3;
@@ -112,7 +113,7 @@ body ul li {
 }
 #root .main {
   flex: 1 1 auto;
-  background: inherit;
+  background: #303030;
   margin: 0 45px 0 45px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
@@ -139,11 +140,22 @@ body ul li {
   display: flex;
   align-items: center;
 }
+#root .main .about-container .about-bio .about-location {
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  opacity: 0.7;
+}
 #root .main .about-container .about-info {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
+}
+#root .main .about-container .about-info .about-info-list .link-color {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
 }
 #root .footer {
   min-height: 54px;
@@ -157,7 +169,7 @@ body ul li {
   margin-bottom: 15px;
 }
 
-.link-color {
+.color-main {
   color: #febd2f;
 }
 

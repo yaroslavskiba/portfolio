@@ -1,4 +1,4 @@
-@mixin main-mixin {
+@mixin about-mixin {
   .about-container {
     width: 85%;
     display: flex;
@@ -21,12 +21,26 @@
         display: flex;
         align-items: center;
       }
+      .about-location {
+        position: relative;
+        top: -10px;
+        font-size: 18px;
+        opacity: 0.7;
+      }
     }
     .about-info {
       display: flex;
       flex-direction: column;
       gap: 15px;
       width: 100%;
+
+      .about-info-list {
+        .link-color {
+          display: inline-flex;
+          align-items: center;
+          gap: 2px;
+        }
+      }
     }
   }
 }

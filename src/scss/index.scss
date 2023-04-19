@@ -1,8 +1,9 @@
 @import './colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import './components/header.scss';
-@import './components/main.scss';
+@import './components/about.scss';
 @import './components/footer.scss';
+@import './components/projects.scss';
 
 html,
 body {
@@ -72,7 +73,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: $background;
+  background: linear-gradient(to bottom right, $background 50%, $main-color 50%);
 
   .header {
     @include header-mixin;
@@ -80,12 +81,13 @@ body {
 
   .main {
     flex: 1 1 auto;
-    background: inherit;
+    background: $background;
     margin: 0 45px 0 45px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     padding: 3% 5%;
-    @include main-mixin;
+    @include about-mixin;
+    @include projects-mixin;
   }
 
   .footer {
@@ -104,6 +106,6 @@ body {
 .button-main {
 }
 
-.link-color {
+.color-main {
   color: $main-color;
 }

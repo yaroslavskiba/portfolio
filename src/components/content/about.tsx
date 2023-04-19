@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsPerson } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
+import { AiOutlineFire } from 'react-icons/ai';
 
 const About = () => {
   return (
@@ -17,31 +18,46 @@ const About = () => {
         </p>
       </div>
       <div className="about-info">
-        <h1 className="title">About Me</h1>
+        <h1 className="title">
+          About <span className="color-main">Me</span>
+        </h1>
 
         <p className="about-info-text">
           I am an aspiring web developer with a passion for building interactive user experiences. I have skills in
-          modern web technologies such as <span className="link-color">JavaScript, TypeScript, HTML</span>, and
-          <span className="link-color"> CSS</span>. I also have experience with CSS preprocessors like
-          <span className="link-color"> Sass</span>, and frontend frameworks like
-          <span className="link-color"> React</span>.
+          modern web technologies such as <span className="color-main">JavaScript, TypeScript, HTML</span>, and
+          <span className="color-main"> CSS</span>. I also have experience with CSS preprocessors like
+          <span className="color-main"> Sass</span>, and frontend frameworks like
+          <span className="color-main"> React</span>.
         </p>
 
         <p className="about-info-text">Some of the tools and libraries I enjoy working with include:</p>
 
         <ul className="about-info-list">
           <li>
-            <span className="link-color">React</span> - A popular frontend framework for building user interfaces.
+            <span className="color-main">
+              <AiOutlineFire /> React
+            </span>
+            <span> - A popular frontend framework for building user interfaces.</span>
           </li>
           <li>
-            <span className="link-color">Redux Toolkit</span> - A toolset for efficient Redux development.
+            <span className="color-main">
+              <AiOutlineFire />
+              <span> Redux Toolkit</span>
+            </span>
+            <span> - A toolset for efficient Redux development.</span>
           </li>
           <li>
-            <span className="link-color">React Router</span> - Routing for React apps.
+            <span className="color-main">
+              <AiOutlineFire /> React Router
+            </span>
+            <span> - Routing for React apps.</span>
           </li>
           <li>
-            <span className="link-color">React Spring</span> - Spring-based animation and gesture library for React
-            apps.
+            <span className="color-main">
+              <AiOutlineFire />
+              <span> React Spring</span>
+            </span>
+            <span> - Spring-based animation and gesture library for React apps.</span>
           </li>
         </ul>
 
