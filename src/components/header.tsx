@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { slide as Menu } from 'react-burger-menu';
 
 const Header = () => {
   const [current, setCurrent] = useState<string>('About Me');
@@ -18,19 +19,38 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="navigation">
-        <ul className="navigation-list">
-          {list.map((item) => {
-            const name = item.name;
+        {window.innerWidth >= 768 ? (
+          <ul className="navigation-list">
+            {list.map((item) => {
+              const name = item.name;
 
-            return (
-              <li key={name} className={`navigation-item${current === name ? ' current-link' : ''}`}>
-                <Link to={item.link} onClick={() => handleClick(name)}>
+              return (
+                <li key={name} className={`navigation-item${current === name ? ' current-link' : ''}`}>
+                  <Link to={item.link} onClick={() => handleClick(name)}>
+                    {name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <Menu right>
+            {list.map((item) => {
+              const name = item.name;
+
+              return (
+                <Link
+                  className={`${current === name ? 'current-link' : ''}`}
+                  to={item.link}
+                  key={name}
+                  onClick={() => handleClick(name)}
+                >
                   {name}
                 </Link>
-              </li>
-            );
-          })}
-        </ul>
+              );
+            })}
+          </Menu>
+        )}
       </nav>
     </header>
   );

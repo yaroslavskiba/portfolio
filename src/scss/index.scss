@@ -77,6 +77,56 @@ body {
 
   .header {
     @include header-mixin;
+
+    .bm-burger-button {
+      position: fixed;
+      width: 36px;
+      height: 30px;
+      right: 36px;
+      top: 36px;
+
+      .bm-burger-bars {
+        border-radius: 25px;
+        box-sizing: content-box;
+        border: 2px solid $background;
+        background: $main-color;
+      }
+
+      .bm-cross-button {
+        height: 24px;
+        width: 24px;
+      }
+
+      .bm-cross {
+        background: $main-color;
+      }
+    }
+
+    .bm-menu {
+      background: $background;
+      padding: 15% 20%;
+      font-size: 22px;
+
+      a {
+        color: $text-main;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        margin-bottom: 15px;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+
+    .bm-menu-wrap {
+      position: fixed;
+      height: 100%;
+    }
+
+    .bm-overlay {
+      background: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .main {

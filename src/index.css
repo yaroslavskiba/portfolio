@@ -111,6 +111,47 @@ body ul li {
 #root .header .navigation .navigation-list .current-link a {
   color: #febd2f;
 }
+#root .header .bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+#root .header .bm-burger-button .bm-burger-bars {
+  border-radius: 25px;
+  box-sizing: content-box;
+  border: 2px solid #303030;
+  background: #febd2f;
+}
+#root .header .bm-burger-button .bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+#root .header .bm-burger-button .bm-cross {
+  background: #febd2f;
+}
+#root .header .bm-menu {
+  background: #303030;
+  padding: 15% 20%;
+  font-size: 22px;
+}
+#root .header .bm-menu a {
+  color: #e3e3e3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 15px;
+}
+#root .header .bm-menu a:hover {
+  color: #febd2f;
+}
+#root .header .bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+#root .header .bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 #root .main {
   flex: 1 1 auto;
   background: #303030;
