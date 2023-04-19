@@ -217,11 +217,15 @@ body ul li {
   align-items: center;
   gap: 2px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1120px) {
   #root .main .about-container {
-    width: 90%;
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  #root .main .about-container {
+    width: 95%;
   }
 }
 #root .main .projects-container .projects-text {
@@ -248,11 +252,28 @@ body ul li {
   box-shadow: 0 0 10px #febd2f;
   transition: 0.5s ease;
 }
+@media (max-width: 480px) {
+  #root .main .projects-container .projects-list {
+    gap: 25px;
+  }
+  #root .main .projects-container .projects-list .projects-item-image {
+    width: 250px;
+    height: 250px;
+  }
+}
 #root .footer {
   min-height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 480px) {
+  #root .main {
+    margin: 5px;
+    border-radius: 25px;
+    box-shadow: 0;
+    padding: 25px 5px;
+  }
 }
 
 .title {

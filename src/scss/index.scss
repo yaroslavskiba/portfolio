@@ -167,6 +167,15 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: 480px) {
+    .main {
+      margin: 5px;
+      border-radius: 25px;
+      box-shadow: 0;
+      padding: 25px 5px;
+    }
+  }
 }
 
 .title {

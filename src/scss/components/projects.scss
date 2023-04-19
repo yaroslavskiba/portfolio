@@ -27,5 +27,16 @@
         }
       }
     }
+
+    @media (max-width: 480px) {
+      .projects-list {
+        gap: 25px;
+
+        .projects-item-image {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
   }
 }
