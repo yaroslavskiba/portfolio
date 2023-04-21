@@ -1,13 +1,13 @@
 import React from 'react';
-import Clock from './projects/clock';
+import Search from './projects/search-engine';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
-import Search from './projects/search';
+import Drum from './projects/drum-machine';
 
 const Projects = () => {
   const location = useLocation();
 
-  const transitions = useTransition(location, {
+  const transitions = useTransition(location.pathname, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: null,
@@ -23,8 +23,8 @@ const Projects = () => {
         {transitions((props, item) => (
           <animated.div style={props}>
             <Routes location={item}>
-              <Route path="/" element={<Clock />} />
-              <Route path="/search" element={<Search />} />
+              <Route path="/" element={<Search />} />
+              <Route path="/drum" element={<Drum />} />
             </Routes>
           </animated.div>
         ))}
