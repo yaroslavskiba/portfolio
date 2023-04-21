@@ -24,7 +24,7 @@ const Main = () => {
         <animated.div style={props}>
           <Routes location={item}>
             <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/*" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/education" element={<Education />} />
             <Route path="/contact" element={<Contact />} />

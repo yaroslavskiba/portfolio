@@ -2,6 +2,7 @@ import React from 'react';
 import Clock from './projects/clock';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
+import Search from './projects/search';
 
 const Projects = () => {
   const location = useLocation();
@@ -23,7 +24,7 @@ const Projects = () => {
           <animated.div style={props}>
             <Routes location={item}>
               <Route path="/" element={<Clock />} />
-              <Route path="/clock" element={<Clock />} />
+              <Route path="/search" element={<Search />} />
             </Routes>
           </animated.div>
         ))}

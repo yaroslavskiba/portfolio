@@ -1,14 +1,14 @@
 import React from 'react';
 import { GiClick } from 'react-icons/gi';
-import { MdViewInAr } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { MdViewInAr } from 'react-icons/md';
 
-const Clock = () => {
+const Search = () => {
   return (
     <div className="projects-list-item">
       <div className="project-item-name">
-        <h3 className="project-name">25/5 Clock</h3>
-        <Link to="/projects/search" className="color-main size">
+        <h3 className="project-name">Search Engine</h3>
+        <Link to="/projects" className="color-main size">
           <GiClick />
         </Link>
       </div>
@@ -46,4 +46,4 @@ const Clock = () => {
   );
 };
 
-export default Clock;
+export default Search;
