@@ -8,7 +8,7 @@ const Drum = () => {
     <div className="projects-list-item">
       <div className="project-item-name">
         <h3 className="project-name">Drum Machine</h3>
-        <Link to="/projects" className="color-main size">
+        <Link to="/projects/mark" className="color-main size">
           <GiClick />
         </Link>
       </div>

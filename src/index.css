@@ -44,6 +44,10 @@ body a:focus {
   text-decoration: none;
   outline: none;
 }
+html a:active,
+body a:active {
+  color: #febd2f;
+}
 html a:visited,
 html a:hover,
 body a:visited,

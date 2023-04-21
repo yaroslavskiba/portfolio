@@ -3,6 +3,7 @@ import Search from './projects/search-engine';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 import Drum from './projects/drum-machine';
+import Mark from './projects/mark';
 
 const Projects = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ const Projects = () => {
             <Routes location={item}>
               <Route path="/" element={<Search />} />
               <Route path="/drum" element={<Drum />} />
+              <Route path="/mark" element={<Mark />} />
             </Routes>
           </animated.div>
         ))}

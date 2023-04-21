@@ -39,6 +39,10 @@ body {
     outline: none;
   }
 
+  a:active {
+    color: $main-color;
+  }
+
   a:visited,
   a:hover {
     text-decoration: none;
