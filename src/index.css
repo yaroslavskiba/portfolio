@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@keyframes handle-click {
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 html,
 body {
   color: #e3e3e3;
@@ -30,6 +38,7 @@ html a:focus,
 body a,
 body a:active,
 body a:focus {
+  color: #febd2f;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -87,7 +96,6 @@ body ul li {
   gap: 5%;
 }
 #root .header .navigation .navigation-list .navigation-item a {
-  color: #e3e3e3;
   position: relative;
 }
 #root .header .navigation .navigation-list .navigation-item a::before {
@@ -228,38 +236,42 @@ body ul li {
     width: 95%;
   }
 }
-#root .main .projects-container .projects-text {
-  margin-bottom: 5%;
+#root .main .projects-container .projects-card-list {
+  margin: auto;
+  width: 75%;
 }
-#root .main .projects-container .projects-text a {
-  display: inline-flex;
-  align-items: center;
-  padding: 0 2px 1px 2px;
-  border-bottom: 1px solid #febd2f;
+#root .main .projects-container .projects-card-list .size {
+  font-size: 32px;
+  animation: handle-click 1.5s infinite;
 }
-#root .main .projects-container .projects-list {
+#root .main .projects-container .projects-card-list .projects-list-item {
+  position: relative;
+  border: 3px solid #febd2f;
+  padding: 5%;
+  border-radius: 25px 25px 0px 25px;
+  background: #303030;
+}
+#root .main .projects-container .projects-card-list .projects-list-item::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  border-top: 40px solid inherit;
+  border-left: 40px solid inherit;
+  border-right: 40px solid inherit;
+  border-bottom: 40px solid inherit;
+  transform: rotate(180deg);
+  border-width: 0 3px 3px 0;
+}
+#root .main .projects-container .projects-card-list .projects-list-item .project-item-name {
   display: flex;
-  flex-wrap: wrap;
-  gap: 5%;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
 }
-#root .main .projects-container .projects-list .projects-item-image {
-  width: 330px;
-  height: 330px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#root .main .projects-container .projects-list .projects-item-image:hover {
-  box-shadow: 0 0 10px #febd2f;
-  transition: 0.5s ease;
-}
-@media (max-width: 480px) {
-  #root .main .projects-container .projects-list {
-    gap: 25px;
-  }
-  #root .main .projects-container .projects-list .projects-item-image {
-    width: 250px;
-    height: 250px;
-  }
+#root .main .projects-container .projects-card-list .projects-list-item .projects-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 #root .footer {
   min-height: 54px;
@@ -281,13 +293,59 @@ body ul li {
   margin-bottom: 15px;
 }
 
+.button-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 180px;
+  padding: 0.8em 1.8em;
+  border: 2px solid #febd2f;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #febd2f;
+}
+.button-main::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #febd2f;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+.button-main:hover::before {
+  width: 105%;
+}
+.button-main:hover {
+  color: #303030;
+}
+
 .color-main {
   color: #febd2f;
 }
 
-.caption-text {
-  font-size: 18px;
-  opacity: 0.8;
+@media (max-width: 768px) {
+  .size {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .size {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

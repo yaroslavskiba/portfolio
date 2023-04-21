@@ -1,5 +1,6 @@
 import React from 'react';
-import { FiGithub } from 'react-icons/fi';
+import { GiClick } from 'react-icons/gi';
+import { MdViewInAr } from 'react-icons/md';
 
 const Projects = () => {
   return (
@@ -7,44 +8,49 @@ const Projects = () => {
       <h1 className="title">
         <span className="color-main">Pr</span>ojects
       </h1>
-      <p className="projects-text">
-        You can take a look at my works on my{' '}
-        <a className="color-main" target="blank" href="https://github.com/yaroslavskiba">
-          <FiGithub /> GitHub account
-        </a>
-        , some of which are listed below:
-      </p>
-      <ul className="projects-list">
-        <li className="projects-item">
-          <a href="https://github.com/yaroslavskiba/25-5">
-            <img className="projects-item-image" src={`${process.env.PUBLIC_URL}/img/3.png`} alt="project screenshot" />
-          </a>
-          <p className="caption-text">25/5 Clock</p>
-          <p>
-            <span className="color-main">FreeCodeCamp</span>
-          </p>
-        </li>
 
-        <li className="projects-item">
-          <a href="https://github.com/yaroslavskiba/drum-machine">
-            <img className="projects-item-image" src={`${process.env.PUBLIC_URL}/img/2.png`} alt="project screenshot" />
-          </a>
-          <p className="caption-text">Drum Machine</p>
-          <p>
-            <span className="color-main">FreeCodeCamp</span>
-          </p>
-        </li>
+      <div className="projects-card-list">
+        <div className="projects-list-item">
+          <div className="project-item-name">
+            <span>
+              <span className="color-main">25/5</span> Clock
+            </span>
+            <span className="color-main size">
+              <GiClick />
+            </span>
+          </div>
 
-        <li className="projects-item">
-          <a href="https://github.com/yaroslavskiba/markdown-previewer">
-            <img className="projects-item-image" src={`${process.env.PUBLIC_URL}/img/4.png`} alt="project screenshot" />
-          </a>
-          <p className="caption-text">Markdown Previewer</p>
-          <p>
-            <span className="color-main">FreeCodeCamp</span>
-          </p>
-        </li>
-      </ul>
+          <div className="projects-skills">
+            <p>
+              <span className="color-main">I</span> developed a 25/5 clock app using{' '}
+              <span className="color-main">JavaScript, TypeScript, React, and React Hooks</span>. The app implements the{' '}
+              <span className="color-main">Pomodoro</span> technique, a productivity method using timed work intervals
+              and breaks.
+            </p>
+            <p>
+              The timer counts down <span className="color-main">25</span> minutes of work and{' '}
+              <span className="color-main">5</span> minutes of break.
+            </p>
+            <p>
+              JavaScript and TypeScript handled the logic.React rendered the UI and interactive elements. React Hooks
+              simplified state management in the function components.
+            </p>
+            <p>
+              The result is a minimal Pomodoro timer app. The project provided valuable experience with industry
+              standards. I&apos;ll keep improving the app to strengthen my web development skills.
+            </p>
+            <p>
+              Overall, the educational project was engaging and taught me{' '}
+              <span className="color-main">frontend web development</span> and building a practical tool. I look forward
+              to using these skills again!
+            </p>
+
+            <a href="https://it2g8q-3000.csb.app/" className="button-main">
+              View <MdViewInAr />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
