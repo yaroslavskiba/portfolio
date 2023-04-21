@@ -32,7 +32,7 @@ body {
   a,
   a:active,
   a:focus {
-    color: $main-color;
+    color: $text-main;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -156,7 +156,7 @@ body {
     background: $background;
     margin: 0 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
+    border-radius: 25px 25px 0px 25px;
     padding: 3% 5%;
     @include about-mixin;
     @include projects-mixin;
@@ -190,9 +190,9 @@ body {
   justify-content: center;
   gap: 5px;
   width: 180px;
-  padding: 15px 7px;
+  height: 55px;
   border: 2px solid $main-color;
-  border-radius: 25px;
+  border-radius: 15px 15px 0 15px;
   position: relative;
   overflow: hidden;
   background-color: transparent;
