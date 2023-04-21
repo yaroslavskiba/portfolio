@@ -182,7 +182,7 @@ body ul li {
 #root .main {
   flex: 1 1 auto;
   background: #303030;
-  margin: 0 45px 0 45px;
+  margin: 0 5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
   padding: 3% 5%;
@@ -231,7 +231,7 @@ body ul li {
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   #root .main .about-container {
     width: 95%;
   }
@@ -244,10 +244,42 @@ body ul li {
   font-size: 32px;
   animation: handle-click 1.5s infinite;
 }
+#root .main .projects-container .projects-card-list .project-name {
+  position: relative;
+  right: -35px;
+  padding: 0 25px;
+  color: #303030;
+  background-color: #febd2f;
+  margin-bottom: 15px;
+}
+#root .main .projects-container .projects-card-list .project-name::before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  right: -13px;
+  transform: rotate(45deg);
+  background-color: #febd2f;
+}
+#root .main .projects-container .projects-card-list .project-name::after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  left: -13px;
+  transform: rotate(45deg);
+  background-color: #febd2f;
+}
+#root .main .projects-container .projects-card-list .project-name:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
 #root .main .projects-container .projects-card-list .projects-list-item {
   position: relative;
   border: 3px solid #febd2f;
-  padding: 5%;
+  padding: 3%;
   border-radius: 25px 25px 0px 25px;
   background: #303030;
 }
@@ -273,15 +305,24 @@ body ul li {
   flex-direction: column;
   gap: 10px;
 }
+@media (max-width: 970px) {
+  #root .main .projects-container .projects-card-list {
+    width: 95%;
+    padding-bottom: 15px;
+  }
+  #root .main .projects-container .projects-card-list .projects-list-item {
+    padding: 5%;
+  }
+}
 #root .footer {
   min-height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #root .main {
-    margin: 5px;
+    margin: 3%;
     border-radius: 25px;
     box-shadow: 0;
     padding: 25px 5px;
@@ -290,7 +331,7 @@ body ul li {
 
 .title {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .button-main {
@@ -299,18 +340,16 @@ body ul li {
   justify-content: center;
   gap: 5px;
   width: 180px;
-  padding: 0.8em 1.8em;
+  padding: 15px 7px;
   border: 2px solid #febd2f;
   border-radius: 25px;
   position: relative;
   overflow: hidden;
   background-color: transparent;
-  text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   transition: 0.3s;
   z-index: 1;
-  font-family: inherit;
   color: #febd2f;
 }
 .button-main::before {

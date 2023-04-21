@@ -12,9 +12,7 @@ const Projects = () => {
       <div className="projects-card-list">
         <div className="projects-list-item">
           <div className="project-item-name">
-            <span>
-              <span className="color-main">25/5</span> Clock
-            </span>
+            <h3 className="project-name">25/5 Clock</h3>
             <span className="color-main size">
               <GiClick />
             </span>
