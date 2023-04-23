@@ -233,6 +233,13 @@ body {
   color: $main-color;
 }
 
+@media (max-width: 970px) {
+  .button-main {
+    height: 47px;
+    width: 155px;
+  }
+}
+
 @media (max-width: 768px) {
   .size {
     font-size: 28px;

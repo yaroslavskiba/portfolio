@@ -314,7 +314,24 @@ body ul li {
     width: 95%;
     padding-bottom: 15px;
   }
+  #root .main .projects-container .projects-card-list .project-name {
+    font-size: 92%;
+    height: 24px;
+  }
+  #root .main .projects-container .projects-card-list .project-name::before {
+    width: 16.97px;
+    height: 16.97px;
+    top: 3.5px;
+    right: -8px;
+  }
+  #root .main .projects-container .projects-card-list .project-name::after {
+    width: 16.97px;
+    height: 16.97px;
+    top: 3.5px;
+    left: -8px;
+  }
   #root .main .projects-container .projects-card-list .projects-list-item {
+    font-size: 85%;
     padding: 5%;
   }
 }
@@ -380,6 +397,12 @@ body ul li {
   color: #febd2f;
 }
 
+@media (max-width: 970px) {
+  .button-main {
+    height: 47px;
+    width: 155px;
+  }
+}
 @media (max-width: 768px) {
   .size {
     font-size: 28px;

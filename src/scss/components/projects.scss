@@ -85,7 +85,27 @@
         width: 95%;
         padding-bottom: 15px;
 
+        .project-name {
+          font-size: 92%;
+          height: 24px;
+
+          &::before {
+            width: 16.97px;
+            height: 16.97px;
+            top: 3.5px;
+            right: -8px;
+          }
+
+          &::after {
+            width: 16.97px;
+            height: 16.97px;
+            top: 3.5px;
+            left: -8px;
+          }
+        }
+
         .projects-list-item {
+          font-size: 85%;
           padding: 5%;
         }
       }
