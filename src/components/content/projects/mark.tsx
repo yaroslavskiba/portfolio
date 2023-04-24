@@ -8,7 +8,7 @@ const Mark = () => {
     <div className="projects-list-item">
       <div className="project-item-name">
         <h3 className="project-name">Markdown Previewer</h3>
-        <Link to="/projects" className="color-main size">
+        <Link to="/projects/clock" className="color-main size">
           <GiClick />
         </Link>
       </div>
