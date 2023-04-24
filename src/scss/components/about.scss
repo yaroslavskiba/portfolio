@@ -44,7 +44,7 @@
     }
   }
 
-  @media (max-width: 1120px) {
+  @media (max-width: px) {
     .about-container {
       display: flex;
       flex-direction: column;
@@ -53,6 +53,7 @@
 
   @media (max-width: 970px) {
     .about-container {
+      font-size: 92%;
       width: 95%;
     }
   }

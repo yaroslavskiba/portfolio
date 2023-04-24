@@ -229,7 +229,7 @@ body ul li {
   align-items: center;
   gap: 2px;
 }
-@media (max-width: 1120px) {
+@media (max-width: px) {
   #root .main .about-container {
     display: flex;
     flex-direction: column;
@@ -237,6 +237,7 @@ body ul li {
 }
 @media (max-width: 970px) {
   #root .main .about-container {
+    font-size: 92%;
     width: 95%;
   }
 }
@@ -317,6 +318,7 @@ body ul li {
   #root .main .projects-container .projects-card-list .project-name {
     font-size: 92%;
     height: 24px;
+    right: -5px;
   }
   #root .main .projects-container .projects-card-list .project-name::before {
     width: 16.97px;
@@ -353,6 +355,7 @@ body ul li {
 .title {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 32px;
 }
 
 .button-main {
@@ -398,17 +401,26 @@ body ul li {
 }
 
 @media (max-width: 970px) {
+  .title {
+    font-size: 28px;
+  }
   .button-main {
     height: 47px;
     width: 155px;
   }
 }
 @media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
   .size {
     font-size: 28px;
   }
 }
 @media (max-width: 480px) {
+  .title {
+    font-size: 22px;
+  }
   .size {
     font-size: 24px;
   }
