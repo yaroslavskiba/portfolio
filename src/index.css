@@ -229,7 +229,7 @@ body ul li {
   align-items: center;
   gap: 2px;
 }
-@media (max-width: px) {
+@media (max-width: 1120px) {
   #root .main .about-container {
     display: flex;
     flex-direction: column;
