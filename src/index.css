@@ -189,7 +189,7 @@ body ul li {
   margin: 0 5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 25px 25px 0px 25px;
-  padding: 3% 5%;
+  padding: 2% 5%;
 }
 #root .main .about-container {
   width: 85%;
@@ -336,6 +336,32 @@ body ul li {
     font-size: 85%;
     padding: 5%;
   }
+}
+#root .main .skills-container .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 5%;
+}
+#root .main .skills-container .skills-list .skills-item {
+  min-width: 240px;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e3e3e3;
+  border-radius: 25px 25px 0 25px;
+  flex: 1 0 33.333%;
+}
+#root .main .skills-container .skills-list .skills-item:hover {
+  border-color: #febd2f;
+  transition: 0.3s ease-in;
+}
+#root .main .skills-container .skills-list .skills-item .skills-item-name {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+#root .main .skills-container .skills-list .skills-item p {
+  font-size: 18px;
 }
 #root .footer {
   min-height: 54px;

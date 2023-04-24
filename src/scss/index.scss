@@ -4,6 +4,7 @@
 @import './components/about.scss';
 @import './components/footer.scss';
 @import './components/projects.scss';
+@import './components/skills.scss';
 
 html,
 body {
@@ -161,9 +162,10 @@ body {
     margin: 0 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 25px 25px 0px 25px;
-    padding: 3% 5%;
+    padding: 2% 5%;
     @include about-mixin;
     @include projects-mixin;
+    @include skills-mixin;
   }
 
   .footer {
