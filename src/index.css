@@ -355,7 +355,6 @@ body ul li {
 #root .main .skills-container .skills-list .skills-item:hover {
   border-color: #febd2f;
   transition: 0.3s ease-in;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #root .main .skills-container .skills-list .skills-item .skills-item-name {
   font-size: 24px;

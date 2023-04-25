@@ -7,6 +7,14 @@ import Contact from './contact';
 import Education from './education';
 import Projects from './projects';
 import Skills from './skills';
+import HexletLayout from '../education/hexlet-layout';
+import FreeCodeCampLayout from '../education/freecodecamp-frontend';
+import FreeCodeCampFrontEnd from '../education/freecodecamp-layout';
+import HexletFrontEnd from '../education/hexlet-frontend';
+import Search from './projects/search-engine';
+import Drum from './projects/drum-machine';
+import Mark from './projects/mark';
+import Clock from './projects/clock';
 
 const Main = () => {
   const location = useLocation();
@@ -24,9 +32,19 @@ const Main = () => {
         <animated.div style={props}>
           <Routes location={item}>
             <Route path="/" element={<About />} />
-            <Route path="/projects/*" element={<Projects />} />
+            <Route path="/projects" element={<Projects />}>
+              <Route path="/projects" element={<Search />} />
+              <Route path="/projects/drum" element={<Drum />} />
+              <Route path="/projects/mark" element={<Mark />} />
+              <Route path="/projects/clock" element={<Clock />} />
+            </Route>
             <Route path="/skills" element={<Skills />} />
-            <Route path="/education" element={<Education />} />
+            <Route path="/education" element={<Education />}>
+              <Route path="/education" element={<HexletFrontEnd />} />
+              <Route path="/education/hexletlayout" element={<HexletLayout />} />
+              <Route path="/educationfcclayout" element={<FreeCodeCampLayout />} />
+              <Route path="/educationfccfrontend" element={<FreeCodeCampFrontEnd />} />
+            </Route>
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
           </Routes>
