@@ -5,6 +5,7 @@
 @import './components/footer.scss';
 @import './components/projects.scss';
 @import './components/skills.scss';
+@import './components/education.scss';
 
 html,
 body {
@@ -166,6 +167,7 @@ body {
     @include about-mixin;
     @include projects-mixin;
     @include skills-mixin;
+    @include education-mixin;
   }
 
   .footer {
@@ -234,6 +236,14 @@ body {
 
 .color-main {
   color: $main-color;
+}
+
+.education-current {
+  position: relative;
+
+  a {
+    color: $main-color;
+  }
 }
 
 @media (max-width: 970px) {

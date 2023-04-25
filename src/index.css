@@ -365,6 +365,59 @@ body ul li {
 #root .main .skills-container .skills-list .skills-item p {
   font-size: 18px;
 }
+#root .main .education-container .education-block {
+  display: flex;
+  gap: 5%;
+}
+#root .main .education-container .education-block .education-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-right: 3px solid #febd2f;
+  padding: 0 15px 0 0;
+}
+#root .main .education-container .education-block .education-nav .education-icon {
+  font-size: 32px;
+  margin-left: 10px;
+}
+#root .main .education-container .education-block .education-routes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#root .main .education-container .education-block .education-routes .education.text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#root .main .education-container .education-block .education-routes .education.text .education-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#root .main .education-container .education-block .education-routes .education-stat {
+  margin: 0 auto;
+  border: 3px solid #febd2f;
+  border-radius: 25px 25px 0 25px;
+  max-width: 80%;
+  width: 100%;
+  min-height: 120px;
+  max-height: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#root .main .education-container .education-block .education-routes .education-stat .stat-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #febd2f;
+}
+#root .main .education-container .education-block .education-routes .education-stat p {
+  font-size: 18px;
+}
 #root .footer {
   min-height: 54px;
   display: flex;
@@ -425,6 +478,13 @@ body ul li {
 }
 
 .color-main {
+  color: #febd2f;
+}
+
+.education-current {
+  position: relative;
+}
+.education-current a {
   color: #febd2f;
 }
 

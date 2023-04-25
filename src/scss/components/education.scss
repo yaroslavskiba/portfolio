@@ -1,0 +1,64 @@
+@mixin education-mixin {
+  .education-container {
+    .education-block {
+      display: flex;
+      gap: 5%;
+
+      .education-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-right: 3px solid $main-color;
+        padding: 0 15px 0 0;
+
+        .education-icon {
+          font-size: 32px;
+          margin-left: 10px;
+        }
+      }
+
+      .education-routes {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .education.text {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          .education-description {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+        .education-stat {
+          margin: 0 auto;
+          border: 3px solid $main-color;
+          border-radius: 25px 25px 0 25px;
+          max-width: 80%;
+          width: 100%;
+          min-height: 120px;
+          max-height: 100%;
+          height: min-content;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          text-align: center;
+
+          .stat-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $main-color;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,14 +7,14 @@ import Contact from './contact';
 import Education from './education';
 import Projects from './projects';
 import Skills from './skills';
-import HexletLayout from '../education/hexlet-layout';
-import FreeCodeCampLayout from '../education/freecodecamp-frontend';
-import FreeCodeCampFrontEnd from '../education/freecodecamp-layout';
-import HexletFrontEnd from '../education/hexlet-frontend';
 import Search from './projects/search-engine';
 import Drum from './projects/drum-machine';
 import Mark from './projects/mark';
 import Clock from './projects/clock';
+import FreeCodeCampLayout from './education/freecodecamp-frontend';
+import FreeCodeCampFrontEnd from './education/freecodecamp-layout';
+import HexletFrontEnd from './education/hexlet-frontend';
+import HexletLayout from './education/hexlet-layout';
 
 const Main = () => {
   const location = useLocation();
