@@ -1,5 +1,6 @@
 import React from 'react';
-import { AiOutlineFire } from 'react-icons/ai';
+import { SiTypescript } from 'react-icons/si';
+import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from 'react-icons/di';
 
 const Skills = () => {
   return (
@@ -11,7 +12,7 @@ const Skills = () => {
       <div className="skills-list">
         <div className="skills-item">
           <h4 className="skills-item-name color-main">
-            <AiOutlineFire />
+            <DiReact />
             React
           </h4>
           <p>
@@ -24,7 +25,7 @@ const Skills = () => {
 
         <div className="skills-item">
           <h4 className="skills-item-name color-main">
-            <AiOutlineFire />
+            <DiJavascript1 />
             Javascript
           </h4>
           <p>
@@ -38,7 +39,7 @@ const Skills = () => {
 
         <div className="skills-item">
           <h4 className="skills-item-name color-main">
-            <AiOutlineFire />
+            <DiHtml5 />
             HTML
           </h4>
           <p>
@@ -51,7 +52,7 @@ const Skills = () => {
 
         <div className="skills-item">
           <h4 className="skills-item-name color-main">
-            <AiOutlineFire />
+            <DiCss3 />
             CSS
           </h4>
           <p>
@@ -64,7 +65,7 @@ const Skills = () => {
 
         <div className="skills-item">
           <h4 className="skills-item-name color-main">
-            <AiOutlineFire />
+            <SiTypescript />
             Typescript
           </h4>
           <p>
