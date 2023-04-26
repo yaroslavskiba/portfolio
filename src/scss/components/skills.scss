@@ -33,4 +33,15 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .skills-container {
+      .skills-list {
+        .skills-item {
+          p {
+            font-size: 75%;
+          }
+        }
+      }
+    }
+  }
 }

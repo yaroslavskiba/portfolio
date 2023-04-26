@@ -112,6 +112,16 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .projects-container {
+      .projects-card-list {
+        .projects-list-item {
+          font-size: 75%;
+        }
+      }
+    }
+  }
 }
 
 @keyframes handle-click {
