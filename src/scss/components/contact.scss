@@ -1,6 +1,7 @@
 @mixin contact-mixin {
   .contact-container {
     .contact-info {
+      margin-top: 25px;
       display: flex;
       align-items: center;
       flex-direction: column;

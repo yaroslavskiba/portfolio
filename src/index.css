@@ -491,6 +491,7 @@ body ul li {
   }
 }
 #root .main .contact-container .contact-info {
+  margin-top: 25px;
   display: flex;
   align-items: center;
   flex-direction: column;
