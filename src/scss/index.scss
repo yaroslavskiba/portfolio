@@ -1,5 +1,5 @@
 @import './colors.scss';
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 @import './components/header.scss';
 @import './components/about.scss';
 @import './components/footer.scss';
@@ -236,6 +236,7 @@ body {
 
 .color-main {
   color: $main-color;
+  font-weight: 600;
 }
 
 .sc {
@@ -244,6 +245,7 @@ body {
   background-color: $main-color;
   color: $background;
   border-radius: 7px 7px 0 7px;
+  font-weight: 600;
 }
 
 .education-current {

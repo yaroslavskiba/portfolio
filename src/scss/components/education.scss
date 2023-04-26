@@ -35,13 +35,14 @@
           }
         }
         .certification {
+          font-weight: 600;
           text-decoration: underline;
           color: $main-color;
           font-size: 22px;
           display: inline-flex;
           align-items: center;
           gap: 10px;
-          max-width: 320px;
+          max-width: 330px;
         }
 
         .education-stat {
