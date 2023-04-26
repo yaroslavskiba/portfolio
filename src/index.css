@@ -17,7 +17,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 1.5;
-  background-image: linear-gradient(to bottom, #303030 0%, #febd2f 100%);
+  background-image: linear-gradient(to bottom, #303030 0%, #ff9b20 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -48,7 +48,7 @@ body a:focus {
 }
 html a:active,
 body a:active {
-  color: #febd2f;
+  color: #ff9b20;
 }
 html a:visited,
 html a:hover,
@@ -110,7 +110,7 @@ body ul li {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #febd2f;
+  background-color: #ff9b20;
   transition: width 0.3s ease-in-out;
 }
 #root .header .navigation .navigation-list .navigation-item a:hover::before {
@@ -118,11 +118,11 @@ body ul li {
   transition: width 0.3s ease-in-out;
 }
 #root .header .navigation .navigation-list .navigation-item a:hover {
-  color: #febd2f;
+  color: #ff9b20;
   transition: 0.5s ease;
 }
 #root .header .navigation .navigation-list .current-link a {
-  color: #febd2f;
+  color: #ff9b20;
   font-weight: 600;
 }
 #root .header .bm-burger-button {
@@ -136,14 +136,14 @@ body ul li {
   border-radius: 25px;
   box-sizing: content-box;
   border: 2px solid #303030;
-  background: #febd2f;
+  background: #ff9b20;
 }
 #root .header .bm-burger-button .bm-cross-button {
   height: 24px;
   width: 24px;
 }
 #root .header .bm-burger-button .bm-cross {
-  background: #febd2f;
+  background: #ff9b20;
 }
 #root .header .bm-menu {
   background: #303030;
@@ -164,7 +164,7 @@ body ul li {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #febd2f;
+  background-color: #ff9b20;
   transition: width 0.3s ease-in-out;
 }
 #root .header .bm-menu .navigation-item a:hover::before {
@@ -172,11 +172,11 @@ body ul li {
   transition: width 0.3s ease-in-out;
 }
 #root .header .bm-menu .navigation-item a:hover {
-  color: #febd2f;
+  color: #ff9b20;
   transition: 0.5s ease;
 }
 #root .header .bm-menu .current-link a {
-  color: #febd2f;
+  color: #ff9b20;
 }
 #root .header .bm-menu-wrap {
   position: fixed;
@@ -256,7 +256,7 @@ body ul li {
   right: -35px;
   padding: 0 25px;
   color: #303030;
-  background-color: #febd2f;
+  background-color: #ff9b20;
   margin-bottom: 15px;
 }
 #root .main .projects-container .projects-card-list .project-name::before {
@@ -267,7 +267,7 @@ body ul li {
   top: 5px;
   right: -13px;
   transform: rotate(45deg);
-  background-color: #febd2f;
+  background-color: #ff9b20;
 }
 #root .main .projects-container .projects-card-list .project-name::after {
   content: "";
@@ -277,7 +277,7 @@ body ul li {
   top: 5px;
   left: -13px;
   transform: rotate(45deg);
-  background-color: #febd2f;
+  background-color: #ff9b20;
 }
 #root .main .projects-container .projects-card-list .project-name:hover {
   transform: scale(1.1);
@@ -285,7 +285,7 @@ body ul li {
 }
 #root .main .projects-container .projects-card-list .projects-list-item {
   position: relative;
-  border: 3px solid #febd2f;
+  border: 3px solid #ff9b20;
   padding: 3%;
   border-radius: 25px 25px 0px 25px;
   background: #303030;
@@ -360,7 +360,7 @@ body ul li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #root .main .skills-container .skills-list .skills-item:hover {
-  border-color: #febd2f;
+  border-color: #ff9b20;
   transition: 0.3s ease-in;
 }
 #root .main .skills-container .skills-list .skills-item .skills-item-name {
@@ -385,7 +385,7 @@ body ul li {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border-right: 3px solid #febd2f;
+  border-right: 3px solid #ff9b20;
   padding: 0 15px 0 0;
 }
 #root .main .education-container .education-block .education-nav .education-icon {
@@ -411,7 +411,7 @@ body ul li {
 #root .main .education-container .education-block .education-routes .certification {
   font-weight: 600;
   text-decoration: underline;
-  color: #febd2f;
+  color: #ff9b20;
   font-size: 22px;
   display: inline-flex;
   align-items: center;
@@ -422,7 +422,7 @@ body ul li {
   gap: 20px;
   padding: 15px;
   margin: 0 auto;
-  border: 3px solid #febd2f;
+  border: 3px solid #ff9b20;
   border-radius: 25px 25px 0 25px;
   max-width: 80%;
   width: 100%;
@@ -448,7 +448,7 @@ body ul li {
 #root .main .education-container .education-block .education-routes .education-stat .stat-title {
   font-size: 20px;
   text-transform: uppercase;
-  color: #febd2f;
+  color: #ff9b20;
 }
 #root .main .education-container .education-block .education-routes .education-stat p {
   font-size: 18px;
@@ -484,7 +484,7 @@ body ul li {
   #root .main .education-container .education-block .education-routes .education-stat .stat-title {
     font-size: 14px;
     text-transform: uppercase;
-    color: #febd2f;
+    color: #ff9b20;
   }
   #root .main .education-container .education-block .education-routes .education-stat p {
     font-size: 85%;
@@ -547,7 +547,7 @@ body ul li {
   gap: 5px;
   width: 180px;
   height: 55px;
-  border: 2px solid #febd2f;
+  border: 2px solid #ff9b20;
   border-radius: 15px 15px 0 15px;
   position: relative;
   overflow: hidden;
@@ -556,7 +556,7 @@ body ul li {
   font-size: 18px;
   transition: 0.3s;
   z-index: 1;
-  color: #febd2f;
+  color: #ff9b20;
 }
 .button-main::before {
   content: "";
@@ -566,7 +566,7 @@ body ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #febd2f;
+  background: #ff9b20;
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -579,13 +579,13 @@ body ul li {
 }
 
 .color-main {
-  color: #febd2f;
+  color: #ff9b20;
   font-weight: 600;
 }
 
 .tel-link {
   padding: 5px 15px;
-  border: 3px solid #febd2f;
+  border: 3px solid #ff9b20;
   color: #e3e3e3;
   display: flex;
   align-items: center;
@@ -597,7 +597,7 @@ body ul li {
   position: relative;
 }
 .tel-link:hover .pulsed-link {
-  color: #febd2f;
+  color: #ff9b20;
   animation: puls 1.5s infinite;
 }
 
@@ -605,14 +605,14 @@ body ul li {
   box-sizing: border-box;
   padding: 3px 15px;
   margin: 0 5px;
-  background-color: #febd2f;
+  background-color: #ff9b20;
   color: #303030;
   border-radius: 7px 7px 0 7px;
   font-weight: 600;
 }
 .sc:hover {
   transition: 0.5s ease;
-  outline: 3px solid #febd2f;
+  outline: 3px solid #ff9b20;
   background-color: #303030;
   color: #e3e3e3;
 }
@@ -621,7 +621,7 @@ body ul li {
   position: relative;
 }
 .education-current a {
-  color: #febd2f;
+  color: #ff9b20;
 }
 
 @media (max-width: 970px) {
