@@ -1,0 +1,30 @@
+@mixin contact-mixin {
+  .contact-container {
+    .contact-info {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+
+      .contact-text {
+        width: 80%;
+      }
+
+      .contact-list {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin: 10px 5px;
+
+          a {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
