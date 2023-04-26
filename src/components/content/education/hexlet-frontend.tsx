@@ -3,7 +3,7 @@ import React from 'react';
 const HexletFrontEnd = () => {
   return (
     <>
-      <div className="education text">
+      <div className="education-text">
         <p>
           <span className="color-main">Course:</span> Frontend Developer
         </p>

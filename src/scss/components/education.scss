@@ -22,7 +22,7 @@
         flex-direction: column;
         gap: 25px;
 
-        .education.text {
+        .education-text {
           display: flex;
           flex-direction: column;
           gap: 15px;
@@ -83,16 +83,17 @@
 
         .education-nav {
           gap: 10px;
-          padding: 0 10px 0 0;
+          margin-right: 5px;
 
           .education-icon {
             font-size: 32px;
-            margin-left: 5px;
+            margin-left: 7px;
           }
         }
 
         .education-routes {
-          .education.text {
+          .education-text {
+            padding-right: 10px;
             font-size: 85%;
           }
           .education-stat {

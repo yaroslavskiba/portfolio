@@ -385,12 +385,12 @@ body ul li {
   flex-direction: column;
   gap: 25px;
 }
-#root .main .education-container .education-block .education-routes .education.text {
+#root .main .education-container .education-block .education-routes .education-text {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-#root .main .education-container .education-block .education-routes .education.text .education-description {
+#root .main .education-container .education-block .education-routes .education-text .education-description {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -427,10 +427,6 @@ body ul li {
   text-transform: uppercase;
   color: #febd2f;
 }
-#root .main .education-container .education-block .education-routes .education-stat .stat-title:hover {
-  text-decoration: underline;
-  transition: 0.5s ease-in-out;
-}
 #root .main .education-container .education-block .education-routes .education-stat p {
   font-size: 18px;
 }
@@ -440,13 +436,14 @@ body ul li {
   }
   #root .main .education-container .education-block .education-nav {
     gap: 10px;
-    padding: 0 10px 0 0;
+    margin-right: 5px;
   }
   #root .main .education-container .education-block .education-nav .education-icon {
     font-size: 32px;
-    margin-left: 5px;
+    margin-left: 7px;
   }
-  #root .main .education-container .education-block .education-routes .education.text {
+  #root .main .education-container .education-block .education-routes .education-text {
+    padding-right: 10px;
     font-size: 85%;
   }
   #root .main .education-container .education-block .education-routes .education-stat {
