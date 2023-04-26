@@ -596,7 +596,6 @@ body ul li {
 }
 
 .sc {
-  position: relative;
   box-sizing: border-box;
   padding: 3px 15px;
   margin: 0 5px;
@@ -606,9 +605,8 @@ body ul li {
   font-weight: 600;
 }
 .sc:hover {
-  top: -3px;
   transition: 0.5s ease;
-  border: 3px solid #febd2f;
+  outline: 3px solid #febd2f;
   background-color: #303030;
   color: #e3e3e3;
 }

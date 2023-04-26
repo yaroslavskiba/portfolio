@@ -17,37 +17,37 @@ const contactItems: ContactItem[] = [
   {
     name: 'Instagram',
     icon: <SiInstagram />,
-    link: 'https://www.instagram.com/',
+    link: 'https://www.instagram.com/yaroslavskiba/',
   },
   {
     name: 'Telegram',
     icon: <TbBrandTelegram />,
-    link: 'https://telegram.org/',
+    link: 'https://t.me/yaroslavskiba',
   },
   {
     name: 'Twitter',
     icon: <RxTwitterLogo />,
-    link: 'https://twitter.com/',
+    link: 'https://twitter.com/yaroslavskiba',
   },
   {
     name: 'Gmail',
     icon: <GoMail />,
-    link: 'https://mail.google.com/',
+    link: 'mailto:yaroslavskiba322@gmail.com',
   },
   {
     name: 'GitHub',
     icon: <VscGithub />,
-    link: 'https://github.com/',
+    link: 'https://github.com/yaroslavskiba',
   },
   {
     name: 'Hexlet',
     icon: <SiFuturelearn />,
-    link: 'https://hexlet.io/',
+    link: 'https://ru.hexlet.io/u/yaroslavskiba',
   },
   {
     name: 'FreeCodeCamp',
     icon: <FaFreeCodeCamp />,
-    link: 'https://freecodecamp.com/',
+    link: 'https://www.freecodecamp.org/Yaroslavskiba',
   },
 ];
 
