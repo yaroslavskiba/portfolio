@@ -541,7 +541,7 @@ body ul li {
   margin: 0 5px;
   background-color: #febd2f;
   color: #303030;
-  border-radius: 25px;
+  border-radius: 7px 7px 0 7px;
 }
 
 .education-current {
