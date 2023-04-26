@@ -11,8 +11,9 @@ import Search from './projects/search-engine';
 import Drum from './projects/drum-machine';
 import Mark from './projects/mark';
 import Clock from './projects/clock';
-import FreeCodeCampLayout from './education/freecodecamp-frontend';
-import FreeCodeCampFrontEnd from './education/freecodecamp-layout';
+import FreeCodeCampFrontEnd from './education/freecodecamp-frontend';
+import FreeCodeCampFrontEndTwo from './education/freecodecamp-frontend2';
+import FreeCodeCampLayout from './education/freecodecamp-layout';
 import HexletFrontEnd from './education/hexlet-frontend';
 import HexletLayout from './education/hexlet-layout';
 
@@ -42,8 +43,9 @@ const Main = () => {
             <Route path="/education" element={<Education />}>
               <Route path="/education" element={<HexletFrontEnd />} />
               <Route path="/education/hexletlayout" element={<HexletLayout />} />
-              <Route path="/educationfcclayout" element={<FreeCodeCampLayout />} />
-              <Route path="/educationfccfrontend" element={<FreeCodeCampFrontEnd />} />
+              <Route path="/education/fcclayout" element={<FreeCodeCampLayout />} />
+              <Route path="/education/fccfrontend" element={<FreeCodeCampFrontEnd />} />
+              <Route path="/education/fccfrontend2" element={<FreeCodeCampFrontEndTwo />} />
             </Route>
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />

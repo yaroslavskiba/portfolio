@@ -19,6 +19,7 @@ const Education = () => {
     { name: 'hexlet layout', link: '/education/hexletlayout', icon: <TbHexagonLetterH /> },
     { name: 'freecodecamp layout', link: '/education/fcclayout', icon: <TbHexagonLetterF /> },
     { name: 'freecodecamp frontend', link: '/education/fccfrontend', icon: <TbHexagonLetterF /> },
+    { name: 'freecodecamp frontend-2', link: '/education/fccfrontend2', icon: <TbHexagonLetterF /> },
   ];
 
   return (

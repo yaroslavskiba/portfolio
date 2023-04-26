@@ -386,6 +386,7 @@ body ul li {
   gap: 25px;
 }
 #root .main .education-container .education-block .education-routes .education-text {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -394,6 +395,15 @@ body ul li {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+#root .main .education-container .education-block .education-routes .certification {
+  text-decoration: underline;
+  color: #febd2f;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 320px;
 }
 #root .main .education-container .education-block .education-routes .education-stat {
   gap: 20px;
@@ -524,6 +534,14 @@ body ul li {
 
 .color-main {
   color: #febd2f;
+}
+
+.sc {
+  padding: 3px 15px;
+  margin: 0 5px;
+  background-color: #febd2f;
+  color: #303030;
+  border-radius: 25px;
 }
 
 .education-current {
