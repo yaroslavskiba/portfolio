@@ -513,6 +513,12 @@ body ul li {
   gap: 5px;
   align-items: center;
 }
+@media (max-width: 768px) {
+  #root .main .contact-container p,
+#root .main .contact-container a {
+    font-size: 75%;
+  }
+}
 #root .footer {
   min-height: 54px;
   display: flex;

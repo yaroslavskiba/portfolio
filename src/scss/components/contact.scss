@@ -28,4 +28,13 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .contact-container {
+      p,
+      a {
+        font-size: 75%;
+      }
+    }
+  }
 }
