@@ -34,6 +34,8 @@
           }
         }
         .education-stat {
+          gap: 20px;
+          padding: 15px;
           margin: 0 auto;
           border: 3px solid $main-color;
           border-radius: 25px 25px 0 25px;
@@ -43,10 +45,22 @@
           max-height: 100%;
           height: min-content;
           display: flex;
-          justify-content: space-around;
+          justify-content: space-evenly;
           align-items: center;
           flex-wrap: wrap;
           text-align: center;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+            }
+          }
 
           .stat-title {
             font-size: 20px;
@@ -56,6 +70,49 @@
 
           p {
             font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .education-container {
+      .education-block {
+        gap: 5%;
+
+        .education-nav {
+          gap: 10px;
+          padding: 0 10px 0 0;
+
+          .education-icon {
+            font-size: 32px;
+            margin-left: 5px;
+          }
+        }
+
+        .education-routes {
+          .education.text {
+            font-size: 85%;
+          }
+          .education-stat {
+            padding: 10px;
+            max-width: 95%;
+            height: min-content;
+
+            div {
+              flex: 1 1 50%;
+            }
+
+            .stat-title {
+              font-size: 14px;
+              text-transform: uppercase;
+              color: $main-color;
+            }
+
+            p {
+              font-size: 85%;
+            }
           }
         }
       }

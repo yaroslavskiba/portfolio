@@ -30,20 +30,24 @@ const HexletFrontEnd = () => {
       </div>
       <div className="education-stat">
         <div>
-          <p className="stat-title">Completed Courses:</p>
-          <p>40</p>
+          <div>
+            <p className="stat-title">Completed Courses:</p>
+            <p>40</p>
+          </div>
+          <div>
+            <p className="stat-title">Completed Tests:</p>
+            <p>107</p>
+          </div>
         </div>
         <div>
-          <p className="stat-title">Completed Tests:</p>
-          <p>107</p>
-        </div>
-        <div>
-          <p className="stat-title">Correct Solutions:</p>
-          <p>97.2%</p>
-        </div>
-        <div>
-          <p className="stat-title">Score:</p>
-          <p>2445</p>
+          <div>
+            <p className="stat-title">Correct Solutions:</p>
+            <p>97.2%</p>
+          </div>
+          <div>
+            <p className="stat-title">Score:</p>
+            <p>2445</p>
+          </div>
         </div>
       </div>
     </>
