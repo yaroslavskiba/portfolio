@@ -105,8 +105,14 @@
         .education-routes {
           .education-text {
             padding-right: 10px;
-            font-size: 85%;
+            font-size: 80%;
           }
+
+          .certification {
+            font-size: 14px;
+            gap: 5px;
+          }
+
           .education-stat {
             padding: 10px;
             max-width: 95%;

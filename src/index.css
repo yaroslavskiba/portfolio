@@ -454,7 +454,11 @@ body ul li {
   }
   #root .main .education-container .education-block .education-routes .education-text {
     padding-right: 10px;
-    font-size: 85%;
+    font-size: 80%;
+  }
+  #root .main .education-container .education-block .education-routes .certification {
+    font-size: 14px;
+    gap: 5px;
   }
   #root .main .education-container .education-block .education-routes .education-stat {
     padding: 10px;
@@ -566,6 +570,10 @@ body ul li {
   }
   .size {
     font-size: 28px;
+  }
+  .sc {
+    padding: 1.5px 7px;
+    margin: 0 2.5px;
   }
 }
 @media (max-width: 480px) {
