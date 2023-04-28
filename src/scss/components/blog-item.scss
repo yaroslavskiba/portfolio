@@ -11,4 +11,12 @@
       gap: 15px;
     }
   }
+  @media (max-width: 768px) {
+    .blog-item-container {
+      padding: 0 5%;
+      .blog-item-text {
+        font-size: 75%;
+      }
+    }
+  }
 }
