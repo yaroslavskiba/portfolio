@@ -1,0 +1,14 @@
+@mixin blog-item-mixin {
+  .blog-item-container {
+    .blog-item-header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .blog-item-text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}

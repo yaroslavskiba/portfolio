@@ -7,6 +7,8 @@
 @import './components/skills.scss';
 @import './components/education.scss';
 @import './components/contact.scss';
+@import './components/blog.scss';
+@import './components/blog-item.scss';
 
 html,
 body {
@@ -171,6 +173,8 @@ body {
     @include skills-mixin;
     @include education-mixin;
     @include contact-mixin;
+    @include blog-mixin;
+    @include blog-item-mixin;
   }
 
   .footer {
@@ -203,7 +207,7 @@ body {
   gap: 5px;
   width: 180px;
   height: 55px;
-  border: 2px solid $main-color;
+  border: 3px solid $main-color;
   border-radius: 15px 15px 0 15px;
   position: relative;
   overflow: hidden;
@@ -273,9 +277,13 @@ body {
 }
 
 .sch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
   box-sizing: border-box;
   padding: 3px 15px;
-  margin: 0 5px;
+  margin: 0 auto;
   background-color: $main-color;
   color: $background;
   border-radius: 7px 7px 0 7px;
@@ -335,10 +343,6 @@ body {
 
     &:hover::before {
       width: 150%;
-    }
-
-    &:hover {
-      color: $background;
     }
   }
 }

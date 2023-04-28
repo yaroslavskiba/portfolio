@@ -16,6 +16,8 @@ import FreeCodeCampFrontEndTwo from './education/freecodecamp-frontend2';
 import FreeCodeCampLayout from './education/freecodecamp-layout';
 import HexletFrontEnd from './education/hexlet-frontend';
 import HexletLayout from './education/hexlet-layout';
+import BlogOne from './blog/blog-one';
+import BlogTwo from './blog/blog-two';
 
 const Main = () => {
   const location = useLocation();
@@ -49,6 +51,8 @@ const Main = () => {
             </Route>
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/blog-one" element={<BlogOne />} />
+            <Route path="/blog/blog-two" element={<BlogTwo />} />
           </Routes>
         </animated.div>
       ))}

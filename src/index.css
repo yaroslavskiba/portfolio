@@ -517,6 +517,94 @@ body ul li {
     font-size: 75%;
   }
 }
+#root .main .blog-container .blog-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+#root .main .blog-container .blog-list .blog-item {
+  text-transform: uppercase;
+  width: 70%;
+  margin: 0 auto;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+#root .main .blog-container .blog-list .blog-item .blog-item-name {
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  flex: 1 1 85%;
+}
+#root .main .blog-container .blog-list .blog-item .blog-item-link {
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  height: 55px;
+  padding: 0 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 15%;
+  border-radius: 7px 7px 0 7px;
+  border: 3px solid #ff9b20;
+}
+#root .main .blog-container .blog-list .blog-item .blog-item-link::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #ff9b20;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+#root .main .blog-container .blog-list .blog-item .blog-item-link:hover::before {
+  width: 105%;
+}
+#root .main .blog-container .blog-list .blog-item .blog-item-link:hover {
+  color: #303030;
+}
+@media (max-width: 820px) {
+  #root .main .blog-container .blog-list .blog-item {
+    height: 45px;
+    width: 95%;
+    font-size: 70%;
+  }
+  #root .main .blog-container .blog-list .blog-item .blog-item-name {
+    flex: 1 1 75%;
+    line-height: 1.2;
+  }
+  #root .main .blog-container .blog-list .blog-item .blog-item-link {
+    flex: 1 1 25%;
+    height: 45px;
+  }
+  #root .main .blog-container .blog-list .blog-item .blog-item-link::before {
+    content: "";
+    width: 0;
+    height: 390%;
+  }
+  #root .main .blog-container .blog-list .blog-item .blog-item-link:hover::before {
+    width: 150%;
+  }
+}
+#root .main .blog-item-container .blog-item-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#root .main .blog-item-container .blog-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 #root .footer {
   min-height: 54px;
   display: flex;
@@ -545,7 +633,7 @@ body ul li {
   gap: 5px;
   width: 180px;
   height: 55px;
-  border: 2px solid #ff9b20;
+  border: 3px solid #ff9b20;
   border-radius: 15px 15px 0 15px;
   position: relative;
   overflow: hidden;
@@ -610,9 +698,13 @@ body ul li {
 }
 
 .sch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
   box-sizing: border-box;
   padding: 3px 15px;
-  margin: 0 5px;
+  margin: 0 auto;
   background-color: #ff9b20;
   color: #303030;
   border-radius: 7px 7px 0 7px;
@@ -665,9 +757,6 @@ body ul li {
   }
   .button-main:hover::before {
     width: 150%;
-  }
-  .button-main:hover {
-    color: #303030;
   }
 }
 @media (max-width: 480px) {
