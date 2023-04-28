@@ -58,24 +58,6 @@ const BlogOne = () => {
           dynamic and interactive web pages.
         </p>
         <p>
-          Another important aspect of becoming a programmer is staying up-to-date with the{' '}
-          <span className="color-main">latest trends and technologies</span>. The field of web development is constantly
-          evolving, and it is essential to keep oneself informed about new tools, frameworks, and techniques. To stay
-          up-to-date with the latest trends and technologies, I rely on various resources such as specialized news
-          <span className="color-main">Telegram channels</span>, <span className="color-main">live streams</span>, and{' '}
-          <span className="color-main">video tutorials on YouTube</span>.
-        </p>
-        <p>
-          What has motivated me to continue learning and growing as a developer is the{' '}
-          <span className="color-main">sense of creativity</span> and
-          <span className="color-main">innovation that comes with being able to create something from scratch</span>.
-          Whether it&apos;s a basic web page or a complex web application, the feeling of accomplishment that comes from
-          seeing my work come to life is truly exhilarating. This sense of satisfaction and fulfillment has driven me to
-          explore new technologies and techniques, and to constantly challenge myself to improve my skills. The ability
-          to bring my ideas to life through programming is what inspires me to{' '}
-          <span className="color-main">continue</span> on this journey of learning and growth.
-        </p>
-        <p>
           In the following articles, I will be sharing my <span className="color-main">painful experience</span> of
           getting acquainted with <span className="color-main">JavaScript</span> and my subsequent education at the
           <span className="color-main">online programming school Hexlet</span>. Thank you for reading!
