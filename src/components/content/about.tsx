@@ -9,11 +9,15 @@ const About: React.FC = () => {
       <div className="about-bio">
         <img src={`${process.env.PUBLIC_URL}/img/1.jpg`} alt="my photo" className="about-image" />
         <p className="about-name">
-          <BsPerson />
+          <span className="color-main">
+            <BsPerson />
+          </span>
           Vorobiov Pavel, 25
         </p>
         <p className="about-location">
-          <CiLocationOn />
+          <span className="color-main">
+            <CiLocationOn />
+          </span>
           Belarus, Vitebsk
         </p>
       </div>

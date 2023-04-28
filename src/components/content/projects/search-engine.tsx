@@ -22,7 +22,7 @@ const Search = () => {
         <p>
           The architecture of the search engine was based on an{' '}
           <span className="color-main">inverted index approach</span> which speeds up the search time by several times.
-          I learned how to properly abstract and work with special data structures. This allowed me to scale and
+          I learned how to properly abstract data and work with special data structures. This allowed me to scale and
           optimize the project.
         </p>
         <p>By building the search engine, I gained valuable experience in:</p>

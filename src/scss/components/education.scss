@@ -50,7 +50,7 @@
           padding: 15px;
           margin: 0 auto;
           border: 3px solid $main-color;
-          border-radius: 25px 25px 0 25px;
+          border-radius: 25px;
           max-width: 80%;
           width: 100%;
           min-height: 120px;
@@ -116,7 +116,7 @@
 
           .education-stat {
             padding: 10px;
-            max-width: 95%;
+            max-width: 60%;
             height: min-content;
 
             div {
@@ -136,5 +136,13 @@
         }
       }
     }
+  }
+}
+.education-current {
+  position: relative;
+  animation: puls-current 2.5s infinite;
+
+  a {
+    color: $main-color;
   }
 }
