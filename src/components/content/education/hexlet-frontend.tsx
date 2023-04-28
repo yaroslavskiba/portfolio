@@ -26,8 +26,8 @@ const HexletFrontEnd = () => {
             <span className="color-main">React, Redux, Redux Toolkit</span>.
           </p>
           <p>
-            Overall, I have gained a solid foundation in web development and programming, and I am excited to apply my
-            skills in real-world projects.
+            I have gained a solid foundation in web development and programming, and I am excited to apply my skills in
+            real-world projects.
           </p>
         </div>
       </div>

@@ -608,7 +608,17 @@ body ul li {
   border-radius: 7px 7px 0 7px;
   font-weight: 600;
 }
-.sc:hover {
+
+.sch {
+  box-sizing: border-box;
+  padding: 3px 15px;
+  margin: 0 5px;
+  background-color: #ff9b20;
+  color: #303030;
+  border-radius: 7px 7px 0 7px;
+  font-weight: 600;
+}
+.sch:hover {
   transition: 0.5s ease;
   outline: 3px solid #ff9b20;
   background-color: #303030;
@@ -683,13 +693,13 @@ body ul li {
     top: 0;
   }
   10% {
-    top: -7px;
+    top: -5px;
   }
   20% {
     top: 0;
   }
   30% {
-    top: -7px;
+    top: -5px;
   }
   40% {
     top: 0;

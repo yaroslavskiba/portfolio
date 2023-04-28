@@ -25,10 +25,6 @@ const FreeCodeCampFrontEndTwo = () => {
             <span className="color-main">React and Redux</span>. These applications helped me gain a deeper
             understanding of how to create dynamic and interactive web pages.
           </p>
-          <p>
-            Overall, this course provided me with a comprehensive understanding of front end development libraries, and
-            I am excited to apply my new skills to future projects.
-          </p>
         </div>
       </div>
       <a

@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
         <ul className="contact-list">
           {contactItems.map((item) => (
             <li key={item.name}>
-              <a href={item.link} target="blank" className="sc">
+              <a href={item.link} target="blank" className="sch">
                 {item.name}
                 {item.icon}
               </a>

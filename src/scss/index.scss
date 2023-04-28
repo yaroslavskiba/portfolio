@@ -270,6 +270,16 @@ body {
   color: $background;
   border-radius: 7px 7px 0 7px;
   font-weight: 600;
+}
+
+.sch {
+  box-sizing: border-box;
+  padding: 3px 15px;
+  margin: 0 5px;
+  background-color: $main-color;
+  color: $background;
+  border-radius: 7px 7px 0 7px;
+  font-weight: 600;
 
   &:hover {
     transition: 0.5s ease;
