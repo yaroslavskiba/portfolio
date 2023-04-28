@@ -9,6 +9,7 @@ interface ListItem {
 
 const Header: React.FC = () => {
   const [current, setCurrent] = useState<string>('About Me');
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const list: ListItem[] = [
     { name: 'About Me', link: '/' },
@@ -19,7 +20,10 @@ const Header: React.FC = () => {
     { name: 'Blog', link: '/blog' },
   ];
 
-  const handleClick = (name: string) => setCurrent(name);
+  const handleClick = (name: string) => {
+    setCurrent(name);
+    setMenuOpen(false);
+  };
 
   return (
     <header className="header">
@@ -38,7 +42,7 @@ const Header: React.FC = () => {
             })}
           </ul>
         ) : (
-          <Menu right>
+          <Menu right isOpen={menuOpen} onStateChange={({ isOpen }) => setMenuOpen(isOpen)}>
             {list.map((item: ListItem) => {
               const name = item.name;
 
