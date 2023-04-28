@@ -2,13 +2,12 @@ import React from 'react';
 import { SiTypescript } from 'react-icons/si';
 import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from 'react-icons/di';
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
     <div className="skills-container">
       <h1 className="title">
         Ski<span className="color-main">ll</span>s
       </h1>
-
       <div className="skills-list">
         <div className="skills-item">
           <h4 className="skills-item-name color-main">

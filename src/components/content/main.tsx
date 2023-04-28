@@ -19,7 +19,7 @@ import HexletLayout from './education/hexlet-layout';
 import BlogOne from './blog/blog-one';
 import BlogTwo from './blog/blog-two';
 
-const Main = () => {
+const Main: React.FC = () => {
   const location = useLocation();
 
   const transitions = useTransition(location, {

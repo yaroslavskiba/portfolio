@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 
-const Header = () => {
+interface ListItem {
+  name: string;
+  link: string;
+}
+
+const Header: React.FC = () => {
   const [current, setCurrent] = useState<string>('About Me');
 
-  const list = [
+  const list: ListItem[] = [
     { name: 'About Me', link: '/' },
     { name: 'Projects', link: '/projects' },
     { name: 'Skills', link: '/skills' },
@@ -21,9 +26,8 @@ const Header = () => {
       <nav className="navigation">
         {window.innerWidth >= 768 ? (
           <ul className="navigation-list">
-            {list.map((item) => {
+            {list.map((item: ListItem) => {
               const name = item.name;
-
               return (
                 <li key={name} className={`navigation-item${current === name ? ' current-link' : ''}`}>
                   <Link to={item.link} onClick={() => handleClick(name)}>
@@ -35,7 +39,7 @@ const Header = () => {
           </ul>
         ) : (
           <Menu right>
-            {list.map((item) => {
+            {list.map((item: ListItem) => {
               const name = item.name;
 
               return (

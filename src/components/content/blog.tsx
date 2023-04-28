@@ -1,18 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Blog = () => {
-  const store = [
+interface BlogItem {
+  name: string;
+  link: string;
+}
+const Blog: React.FC = () => {
+  const store: BlogItem[] = [
     { name: 'The Story of How it All Began', link: '/blog/blog-one' },
     { name: 'The Story of How it All Began, Part2', link: '/blog/blog-two' },
   ];
+
   return (
     <div className="blog-container">
       <h1 className="title">
         B<span className="color-main">log</span>
       </h1>
       <ul className="blog-list">
-        {store.map((item) => {
+        {store.map((item: BlogItem) => {
           return (
             <li key={item.name}>
               <div className="blog-item">

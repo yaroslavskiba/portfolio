@@ -3,7 +3,7 @@ import { BsPerson } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
 import { AiOutlineFire } from 'react-icons/ai';
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <div className="about-container">
       <div className="about-bio">
