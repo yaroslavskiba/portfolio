@@ -18,11 +18,15 @@ const Blog: React.FC = () => {
       </h1>
       <ul className="blog-list">
         {store.map((item: BlogItem) => {
+          const titleParts = item.name.split(' ');
+
           return (
             <li key={item.name}>
               <div className="blog-item">
                 <div className="blog-item-name">
-                  <p>{item.name}</p>
+                  <p>
+                    <span className="color-main">{titleParts[0]}</span> {titleParts.slice(1).join(' ')}
+                  </p>
                 </div>
                 <Link className="blog-item-link" to={item.link}>
                   View
