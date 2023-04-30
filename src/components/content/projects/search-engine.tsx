@@ -27,14 +27,19 @@ const Search = () => {
         </p>
         <p>By building the search engine, I gained valuable experience in:</p>
         <ul>
-          <li>• Parsing raw data from various sources</li>
           <li>
-            • Implementing <span className="color-main">search algorithms</span> like{' '}
-            <span className="color-main">TF-IDF</span> to rank results
+            <span className="color-main">• </span> Parsing raw data from various sources
           </li>
-          <li>• Optimizing the search process by using an inverted index</li>
           <li>
-            • Improving search relevance through <span className="color-main">query expansion</span>
+            <span className="color-main">• </span> Implementing <span className="color-main">search algorithms</span>{' '}
+            like <span className="color-main">TF-IDF</span> to rank results
+          </li>
+          <li>
+            <span className="color-main">• </span> Optimizing the search process by using an inverted index
+          </li>
+          <li>
+            <span className="color-main">• </span> Improving search relevance through{' '}
+            <span className="color-main">query expansion</span>
           </li>
         </ul>
         <a href="https://github.com/yaroslavskiba/algorithms-project-69" target="blank" className="button-main">

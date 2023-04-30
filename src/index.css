@@ -304,18 +304,6 @@ body ul li {
   background: inherit;
   padding: 3%;
 }
-#root .main .projects-container .projects-card-list .projects-list-item::before {
-  content: "";
-  position: absolute;
-  bottom: -40px;
-  right: 0;
-  border-top: 40px solid inherit;
-  border-left: 40px solid inherit;
-  border-right: 40px solid inherit;
-  border-bottom: 40px solid inherit;
-  transform: rotate(180deg);
-  border-width: 0 3px 3px 0;
-}
 #root .main .projects-container .projects-card-list .projects-list-item .project-item-name {
   display: flex;
   align-items: center;
@@ -326,6 +314,51 @@ body ul li {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+#root .main .projects-container .projects-card-list .projects-list-item .button-main {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 180px;
+  height: 55px;
+  border: 3px solid #ff9b20;
+  border-radius: 15px 15px 0 15px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.3s;
+  z-index: 1;
+  color: #ff9b20;
+}
+#root .main .projects-container .projects-card-list .projects-list-item .button-main::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #ff9b20;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+#root .main .projects-container .projects-card-list .projects-list-item .button-main:hover::before {
+  width: 105%;
+}
+#root .main .projects-container .projects-card-list .projects-list-item .button-main:hover {
+  color: #303030;
+}
+#root .main .projects-container .projects-card-list .projects-list-item p {
+  padding-left: 3%;
+  border-left: 3px solid #ff9b20;
+}
+#root .main .projects-container .projects-card-list .projects-list-item ul li::marker {
+  color: #ff9b20;
 }
 @media (max-width: 970px) {
   #root .main .projects-container .projects-card-list {
@@ -664,45 +697,6 @@ body ul li {
   text-align: center;
   margin-bottom: 10px;
   font-size: 32px;
-}
-
-.button-main {
-  margin-top: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  width: 180px;
-  height: 55px;
-  border: 3px solid #ff9b20;
-  border-radius: 15px 15px 0 15px;
-  position: relative;
-  overflow: hidden;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-size: 18px;
-  transition: 0.3s;
-  z-index: 1;
-  color: #ff9b20;
-}
-.button-main::before {
-  content: "";
-  width: 0;
-  height: 300%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  background: #ff9b20;
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
-}
-.button-main:hover::before {
-  width: 105%;
-}
-.button-main:hover {
-  color: #303030;
 }
 
 .color-main {
