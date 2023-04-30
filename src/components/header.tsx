@@ -17,7 +17,8 @@ const Header: React.FC = () => {
     { name: 'Skills', link: '/skills' },
     { name: 'Education', link: '/education' },
     { name: 'Contact', link: '/contact' },
-    { name: 'Blog', link: '/blog' },
+    // { name: 'Blog', link: '/blog' },
+    //TODO: В разработке!
   ];
 
   const handleClick = (name: string) => {

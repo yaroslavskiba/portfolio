@@ -302,6 +302,7 @@ body ul li {
 #root .main .projects-container .projects-card-list .projects-list-item {
   position: relative;
   background: inherit;
+  padding: 3%;
 }
 #root .main .projects-container .projects-card-list .projects-list-item::before {
   content: "";
@@ -319,6 +320,7 @@ body ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2%;
 }
 #root .main .projects-container .projects-card-list .projects-list-item .projects-skills {
   display: flex;
@@ -665,6 +667,7 @@ body ul li {
 }
 
 .button-main {
+  margin-top: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
