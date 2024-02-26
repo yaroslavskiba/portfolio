@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <span className="color-main">
             <BsPerson />
           </span>
-          Vorobiov Pavel, 25
+          Vorobiov Pavel, 26
         </p>
         <p className="about-location">
           <span className="color-main">
